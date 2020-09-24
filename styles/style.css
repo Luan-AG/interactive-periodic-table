@@ -1,4 +1,4 @@
-
+/* keep the max size in bigger screens*/
 @media(min-width: 1366px) {
     body {
         display: grid;
@@ -10,22 +10,8 @@
     }
 }
 
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 /*---------------------------styling the overlay effect*/
-.container {
-    background-color: rosybrown;
-    border: none;
-    padding: 5px;
-    max-width: 1366px;
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-}
-
 .overlay {
     display: none; 
     align-items: center;
@@ -50,20 +36,37 @@ body {
     margin: 15px 0;
 }
 
-a {
+p a {
     text-decoration: underline;
 }
 
 .text a:hover {
     color: rgb(143, 140, 140);
 }
-/*-----------------------------overlay effect ends here*/
-
-
 
 a {
     text-decoration: none;
     color: inherit;
+}
+/*-----------------------------overlay effect ends here*/
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 10px 0 0 0;
+    background-color: rgb(204, 204, 226);
+}
+
+.container {
+    background-color: #c5a9a9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 1366px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
 }
 
 h1 {
@@ -71,13 +74,28 @@ h1 {
     text-align: center;
 }
 
-div {
+h2 {
+    margin: 0;
     padding: 0px;
-    text-align: center;
-    border: 1px solid #cacaca;
-    border-radius: 5px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+p {
+    margin: 0;
+    padding: 0px 0 0 0;
+    font-size: 8px;
+    font-weight: normal;
+    text-align: center;
 }
 
 .empty1, .empty2, .empty3 {
@@ -87,48 +105,38 @@ div {
 .class1, .class2, .class3, .class4, .class5, .class6, .class7, .class8, .class9 {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.7), 0 2px 5px 0 rgba(0, 0, 0, 0.6), 0 3px 7px 0 rgba(0, 0, 0, 0.3);
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    align-items: center;
+    text-align: center;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.class1 {background-color: rgb(68, 156, 68);}
+.class1 {background-color: #449c44;}
 .class2 {background-color: #4e4eff;}
-.class3 {background-color: rgb(250, 77, 77);}
-.class4 {background-color: rgb(207, 169, 0);}
-.class5 {background-color: rgb(255, 136, 0);}
-.class6 {background-color: lightgreen;}
-.class7 {background-color: lightslategray;}
-.class8 {background-color: rgb(113, 174, 212);}
-.class9 {background-color: rgb(185, 102, 185);}
+.class3 {background-color: #fa4d4d;}
+.class4 {background-color: #cfa900;}
+.class5 {background-color: #ff8800;}
+.class6 {background-color: #90ee90;}
+.class7 {background-color: #778899;}
+.class8 {background-color: #71aed4;}
+.class9 {background-color: #b966b9;}
 
-
-.class1:hover {
-    background-color:  rgba(68, 156, 68, 0.5);
-    border-color: darkgray;
-    transition: linear .1s;
-    color: rgba(0, 0, 0, 0.7);
-    
-}
-
-div h3 {
-    margin: 0;
+.class1 button {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    border-radius: 5px;
+    border: none;
     padding: 0;
-    font-size: 10px;
-    font-weight: bold;
-    text-align: left;
-}
-
-div h2 {
     margin: 0;
-    padding: 0px;
-    font-size: 20px;
-    font-weight: bold;
+    background-color: rgb(68, 156, 68);
+    cursor: pointer;
     text-align: center;
+    font-family: inherit;
 }
-
-div p {
-    margin: 0;
-    padding: 0px 0 0 0;
-    font-size: 8px;
-    font-weight: normal;
-    text-align: center;
+.class1 button:hover {
+    background-color:   rgb(103, 156, 103);
+    transition: linear .1s;
+    color: #d4d3d3
 }
