@@ -1,5 +1,5 @@
 let button = document.querySelector(".overlayHydrogen");
-let skip = document.querySelector(".overlay");
+let skip = document.querySelector(".closebtn");
 
 button.addEventListener("click", turnOn);
 skip.addEventListener("click", turnOff);
