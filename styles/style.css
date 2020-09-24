@@ -1,0 +1,134 @@
+
+@media(min-width: 1366px) {
+    body {
+        display: grid;
+        justify-items: center ;
+    }
+
+    .container {
+        width: 1345px;
+    }
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*---------------------------styling the overlay effect*/
+.container {
+    background-color: rosybrown;
+    border: none;
+    padding: 5px;
+    max-width: 1366px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.overlay {
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0);
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.text { 
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.text p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.text a:hover {
+    color: rgb(143, 140, 140);
+}
+/*-----------------------------overlay effect ends here*/
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    grid-column: 1/19;
+    text-align: center;
+}
+
+div {
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.empty1, .empty2, .empty3 {
+    border: none;
+}
+
+.class1, .class2, .class3, .class4, .class5, .class6, .class7, .class8, .class9 {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.7), 0 2px 5px 0 rgba(0, 0, 0, 0.6), 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+.class1 {background-color: rgb(68, 156, 68);}
+.class2 {background-color: #4e4eff;}
+.class3 {background-color: rgb(250, 77, 77);}
+.class4 {background-color: rgb(207, 169, 0);}
+.class5 {background-color: rgb(255, 136, 0);}
+.class6 {background-color: lightgreen;}
+.class7 {background-color: lightslategray;}
+.class8 {background-color: rgb(113, 174, 212);}
+.class9 {background-color: rgb(185, 102, 185);}
+
+
+.class1:hover {
+    background-color:  rgba(68, 156, 68, 0.5);
+    border-color: darkgray;
+    transition: linear .1s;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+
+div h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+div h2 {
+    margin: 0;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div p {
+    margin: 0;
+    padding: 0px 0 0 0;
+    font-size: 8px;
+    font-weight: normal;
+    text-align: center;
+}
